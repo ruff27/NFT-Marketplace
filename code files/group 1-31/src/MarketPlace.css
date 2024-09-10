@@ -1,0 +1,113 @@
+/* Styling for the main marketplace container */
+.marketplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1642239817356-9dffb1bcc156');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+/* Container for displaying items */
+.items-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for individual items */
+.item {
+  flex: 1 1 200px;
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  transition: transform 0.1s;
+}
+
+/* Add hover effect to items */
+.item:hover {
+  transform: scale(1.1);
+}
+
+/* Styling for images within items */
+.item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Styling for item titles and descriptions */
+.item h3, .item p {
+  margin: 8px 0;
+}
+
+/* Styling for the filter input section */
+.filter-input {
+  margin-bottom: 20px;
+}
+
+/* Styling for the filter input text box */
+.filter-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Highlight text box when focused */
+.filter-input input[type="text"]:focus {
+  border-color: #1895dd;
+}
+
+/* Styling for the search input text box */
+.search-input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Highlight search text box when focused */
+.search-input input[type="text"]:focus {
+  border-color: #1895dd;
+}
+
+/* Button styles for Buy and Sell buttons */
+.buy-button,
+.sell-button {
+  padding: 8px 16px;
+  background-color: #007bff; /* Blue color, you can change this */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change button color on hover */
+.buy-button:hover,
+.sell-button:hover {
+  background-color: #0056b3; /* Darker blue on hover, you can change this */
+}
+
+/* Styling for disabled (grayed out) buttons */
+.buy-button.disabled,
+.sell-button.disabled {
+  background-color: #ccc; /* Grayed out for disabled buttons */
+  cursor: not-allowed;
+}

@@ -1,0 +1,43 @@
+.homepage {
+    padding: 0;
+    position: relative;
+    height: 100vh;
+}
+  
+.homepage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Background image fits entire screen */
+  
+.homepage-text, .about-us-text {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+  
+.homepage-text {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+}
+  
+.about-us-text {
+    top: 30%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    padding: 10px;
+}

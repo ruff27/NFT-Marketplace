@@ -1,0 +1,89 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1642239817356-9dffb1bcc156');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+
+/* Background image set up */
+  
+.header-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.header-box h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+/* Adjusting header box and h2 element above the table */
+
+.history-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+  
+.history-table, th, td {
+    border: 1px solid #ccc;
+}
+  
+  
+th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+  
+th {
+    background-color: #333;
+    color: white;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Different colour for odd and even number of transactions */
+}
+  
+tr:hover {
+    background-color: #a49999; /* Changes colour on hover */
+}
+  
+.remaining-credit-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.remaining-credit-box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+  
+.remaining-credit-box p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+  
+.remaining-credit-box:hover {
+    background-color: #ffc107; /* Change the background color on hover for Remaining Credit */
+    cursor: pointer; /* Change cursor on hover */
+}
+  
